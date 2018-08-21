@@ -12,5 +12,6 @@ public interface IssueRepository extends JpaRepository<IssueReport, Long> {
 	@Query(value = "SELECT i FROM IssueReport i WHERE markedAsPrivate = false")
     List<IssueReport> findAllButPrivate();
 
+	//test command added
 	List<IssueReport> findAllByEmail(String email);
 }
