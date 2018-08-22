@@ -20,10 +20,17 @@ public class IssueReport {
     private boolean updates;
     private boolean done;
     private Date created;
-    private Date updated;
+    private Date updated;    
 
-    public IssueReport() {}
-    
+	public IssueReport() {}
+
+    public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getEmail() {
 		return email;
